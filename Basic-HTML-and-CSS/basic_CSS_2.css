@@ -1,0 +1,13 @@
+p {
+	color: orange;
+	background-color: black;
+	font-size: large;
+	text-align: center;
+	text-shadow: blue 2px 5px;
+}
+.crim {
+	color: crimson;
+	font-size: small;
+	text-align: right;
+	font: Impact;
+}
