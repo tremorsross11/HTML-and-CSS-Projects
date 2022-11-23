@@ -311,27 +311,28 @@ section {
     text-decoration: underline;
 }
 
-.submit input[type='submit'] {
+.submitbutton input[type='button'] {
     color: rgb(255, 255, 255);
     cursor: pointer;
     border: none;
+    display: flex;
     font-weight: 900;
     outline: none;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    margin: 0px 3%;
-    padding: 7px 0px;
+    margin: 0px auto;
+    padding: 7px 7px 7px 7px;
     width: 25%;
-    font-size: 18px;
+    font-size: 22px;
     transition: border-color 0.3s color 0.3s background-color 0.3s;
     border-radius: 7px;
     background-color: #797a7b;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
-.submit input[type='submit']:hover {
+.submitbutton input[type='button']:hover {
     color: #000;
-    background-color: #8d8e8f;
+    background-color: #969ba0;
     box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -508,5 +509,8 @@ section {
 
 .video-container p {
     text-align: center;
-    padding: 20, 20, 20, 20;
+}
+
+a:link {
+    color: red;
 }
