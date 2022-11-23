@@ -3,113 +3,197 @@
 	<head>
 		<meta charset='UTF-8'>
 		<title>Tortoises</title>
+		<link rel="stylesheet" href="../One-page-website/one-page-css.css">
+		<link rel="" href="">
 	</head>
 	<header>
+			<h1> &nbsp &nbsp &nbsp </h1>
 			<h1>The Tortoise Hub</h1>
-			<p><em>The perfect site for finding information about tortoise breeds.</em></p>
+			<h2><em>The perfect site for finding information about tortoise breeds.</em></h2>
 	</header>
 	<body>
 	
 	<!--nav-->
-		<div>
-			<div>
-				<ul>
-					<a href='#home' id='link'><li>Home</li>
-					<a href='#contact' id='link'><li>Contact</li>
-				</ul>
-			</div>
+	<div class='wrap'>
+		<div class="menu-container">
+			<ul class="menu">
+				<li>Home</li>
+				<li>About
+					<ul class="submenu">
+						<li>About us</li>
+						<li>History</li>
+						<li>Careers</li>
+					</ul>
+				</li>
+				<li>Breeds
+					<ul class="submenu">
+						<li>Russians</li>
+						<li>Redfoots</li>
+						<li>Greeks</li>
+						<li>Sulcatas</li>
+						<li>Hermanns</li>
+						<li>Marginateds</li> 
+						<li>Pancakes</li>
+						<li>Indian Star</li>  
+					</ul>
+				</li>
+				<li>Contact</li>
+			</ul>
 		</div>
+	</div>
+
 	<!--end Nav-->
 	<!--Home-->
 		<div id='home'>
-			<div>
-				<div>
-					<span><h2>Home</h2></span>
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main"><h2>Home</h2></span>
 				</div>
 			</div>
 		</div>
 	<!--end Home-->
 	
 	<!--Breeds-->
-	<section>
-		<div>
+	<section id="breeds">
+		<div class="container">
 			<h1>Breeds</h1>
-			<div>
+			<div class="flex-container">
 			
 				<!--photo container-->
-				<div>
-					<div>
-						<img src="Images\russian-tortoise-small.jpg" width='700' height='400' alt='Russian Tortoise'>
-						<div>
+				<div class="photo-container">
+					<div class="photo">
+						<img src="Images\russian-tortoise-small.jpg" width='400' height='200' alt='Russian Tortoise'>
+						<div class="photo-overlay">
 							<h3>Russian Tortoise</h3>
 							<p>This breed of tortoise lives in arid enviroments.</p>
 						</div>
-					<div>
+					</div>
 				</div>
 				<!--end photo container-->
 				
 				<!--photo container2-->
-				<div>
-					<div>
-						<img src="Images\redfooted_tortoise-1024x683.jpg" width='700' height='400' alt='Redfoot Tortoise'>
-						<div>
+				<div class="photo-container">
+					<div class="photo">
+						<img src="Images\redfooted_tortoise-1024x683.jpg" width='400' height='200' alt='Redfoot Tortoise'>
+						<div class="photo-overlay">
 							<h3>Redfoot Tortoise</h3>
 							<p>This breed of tortoise lives in tropical enviroments.</p>
 						</div>
-					<div>
+					</div>
 				</div>
 				<!--end photo container-->
 				
 				<!--photo container3-->
-				<div>
-					<div>
-						<img src="Images\greektort.jpg" width='700' height='400' alt='Greek Tortoise'>
-						<div>
+				<div class="photo-container">
+					<div class="photo">
+						<img src="Images\greektort.jpg" width='400' height='200' alt='Greek Tortoise'>
+						<div class="photo-overlay">
 							<h3>Greek Tortoise</h3>
 							<p>This breed of tortoise also lives in arid enviroments.</p>
 						</div>
-					<div>
+					</div>
 				</div>
 				<!--end photo container-->
 				
 				<!--photo container4-->
-				<div>
-					<div>
-						<img src="Images\Sulcata_Tortoise_(5)_(8679964197).jpg" width='700' height='400' alt='Sulcata Tortoise'>
-						<div>
+				<div class="photo-container">
+					<div class="photo">
+						<img src="Images\Sulcata_Tortoise_(5)_(8679964197).jpg" width='400' height='200' alt='Sulcata Tortoise'>
+						<div class="photo-overlay">
 							<h3>Sulcata Tortoise</h3>
-							<p>This breed of tortoise lives in deserts</p>
+							<p>This breed of tortoise lives in deserts.</p>
 						</div>
-					<div>
+					</div>
+				</div>
+				<!--end photo container-->
+				
+				<!--photo container5-->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="Images\hermanntort.jpg" width='400' height='200' alt='Russian Tortoise'>
+						<div class="photo-overlay">
+							<h3>Hermanns Tortoise</h3>
+							<p>This breed of tortoise lives in arid enviroments.</p>
+						</div>
+					</div>
+				</div>
+				<!--end photo container-->
+				
+				<!--photo container6-->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="Images\marginatedtort.jpg" width='800' height='600' alt='Russian Tortoise'>
+						<div class="photo-overlay">
+							<h3>Marginated Tortoise</h3>
+							<p>This breed of tortoise lives in arid enviroments.</p>
+						</div>
+					</div>
+				</div>
+				<!--end photo container-->
+				
+				<!--photo container7-->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="Images\pancaketort.jpg" width='400' height='200' alt='Russian Tortoise'>
+						<div class="photo-overlay">
+							<h3>Pancake Tortoise</h3>
+							<p>This breed of tortoise lives in rocky enviroments.</p>
+						</div>
+					</div>
+				</div>
+				<!--end photo container-->
+				
+				<!--photo container8-->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="Images\indianstartort.jpg" width='400' height='200' alt='Russian Tortoise'>
+						<div class="photo-overlay">
+							<h3>Indian Star Tortoise</h3>
+							<p>This breed of tortoise lives in hot and dry enviroments.</p>
+						</div>
+					</div>
+				</div>
+				<!--end photo container-->
+
+				<!--photo container9-->
+				<div class="photo-container">
+					<div class="photo">
+						<img src="Images\galapagostort.jpg" width='400' height='200' alt='Russian Tortoise'>
+						<div class="photo-overlay">
+							<h3>Galapagos Tortoise</h3>
+							<p>This breed of tortoise lives in tropical enviroments.</p>
+						</div>
+					</div>
 				</div>
 				<!--end photo container-->
 				
 				<!--Video container-->
-				<div>
-					<div>
+				<div class="video-container">
+					<div class="video">
 						<iframe src="https://www.youtube.com/embed/s9owa3BiXhQ""
-						width="560" height="315" frameborder="0" allowfullscreen></iframe>
+						width="935" height="515" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<p>Here is a video of some giant Galapagos Tortoises.</p>
 				</div>
+				<!--end video container-->
 			</div>
 		</div>
 	</section>
 	<!--end About-->
 	
 	<!--Contact-->
-	<section>
-		<div id='contact'>
-			<div>
-				<h1>Contact</h1>
-				<div>
+	<section id="contact">
+		<div class='container'>
+			<div class="contact">
+				<h1 class="heading-padding">Contact</h1>
+				<div class="contactinfo">
 					<h2><span>Have any questions?</span>
 						<br />Send your contact info and we will get back to you!
 					</h2>
-					<p>
+					<p class="contactinfotext">
 						Please provide us with your basic contact information.
 					</p>
-					<div>
+					<div class="form">
 						<form action='' method='post'>
 							<input class='contact' type='text' value='First Name'>
 							<input class='contact' type='text' value='Last Name'>
@@ -117,8 +201,8 @@
 							<input class='contact' type='text' value='Phone Number'>
 							<div class='form-spacer'>
 							</div>
-							<div>
-								<input type='submit' value='Submit'><br>
+							<div class="submit">
+								<input type='button' value='Submit'><br>
 								<label class='terms'>Terms and Conditions</label>
 							</div>
 						</form>
@@ -130,7 +214,7 @@
 	<!--end Contact-->
 	
 	<!--footer-->
-	<div>
+	<div id="footer">
 		www.Thetortoisehub.com &nbsp; &nbsp; &copy; 2022
 	</div>
 	<!--end footer-->
