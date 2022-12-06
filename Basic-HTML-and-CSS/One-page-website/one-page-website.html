@@ -5,6 +5,7 @@
 		<title>Tortoises</title>
 		<link rel="stylesheet" href="../One-page-website/one-page-css.css">
 		<link rel="" href="">
+		<script src="one-page-website.js" defer></script>
 	</head>
 	<header>
 			<h1> &nbsp &nbsp &nbsp </h1>
@@ -46,7 +47,7 @@
 		<div id='home'>
 			<div class="container">
 				<div class="text-center">
-					<div class="head-main"><h2><a href='#home'>Home</a></h2></div>
+					<div class="head-main"><h2>Home</h2></div>
 				</div>
 			</div>
 		</div>
@@ -56,13 +57,14 @@
 	<section id="breeds">
 		<div class="container">
 			<h1>
-			<a href='#Breeds'>Breeds</a>
+			Breeds
 			</h1>
 			<div class="flex-container">
 				<!--photo container-->
 				<div class="photo-container">
 					<div class="photo">
-						<img src="Images\russian-tortoise-small.jpg" width='400' height='200' alt='Russian Tortoise'>
+						<img src="Images\russian-tortoise-small.jpg" width='400' height='200'
+						 alt='Russian Tortoise' onclick = "openModal();currentSlides(1)" class="hover-shadow cursor">
 						<div class="photo-overlay">
 							<h3>Russian Tortoise</h3>
 							<p>This breed of tortoise lives in arid enviroments.</p>
@@ -74,7 +76,7 @@
 				<!--photo container2-->
 				<div class="photo-container">
 					<div class="photo">
-						<img src="Images\redfooted_tortoise-1024x683.jpg" width='400' height='200' alt='Redfoot Tortoise'>
+						<img src="Images\redfooted_tortoise-1024x683.jpg" width='400' height='200' alt='Redfoot Tortoise' onclick = "openModal();currentSlides(2)" class="hover-shadow cursor" >
 						<div class="photo-overlay">
 							<h3>Redfoot Tortoise</h3>
 							<p>This breed of tortoise lives in tropical enviroments.</p>
@@ -86,7 +88,7 @@
 				<!--photo container3-->
 				<div class="photo-container">
 					<div class="photo">
-						<img src="Images\greektort.jpg" width='400' height='200' alt='Greek Tortoise'>
+						<img src="Images\greektort.jpg" width='400' height='200' alt='Greek Tortoise' onclick = "openModal();currentSlides(3)" class="hover-shadow cursor">
 						<div class="photo-overlay">
 							<h3>Greek Tortoise</h3>
 							<p>This breed of tortoise also lives in arid enviroments.</p>
@@ -98,7 +100,7 @@
 				<!--photo container4-->
 				<div class="photo-container">
 					<div class="photo">
-						<img src="Images\Sulcata_Tortoise_(5)_(8679964197).jpg" width='400' height='200' alt='Sulcata Tortoise'>
+						<img src="Images\Sulcata_Tortoise_(5)_(8679964197).jpg" width='400' height='200' alt='Sulcata Tortoise' onclick = "openModal();currentSlides(4)" class="hover-shadow cursor">
 						<div class="photo-overlay">
 							<h3>Sulcata Tortoise</h3>
 							<p>This breed of tortoise lives in deserts.</p>
@@ -177,9 +179,125 @@
 				</div>
 				<!--end video container-->
 			</div>
+			<div class="row">
+				<div class="column">
+				  <img src="Images\russian-tortoise-small.jpg" height='200' width='220' onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+				<div class="column">
+				  <img src="Images\redfooted_tortoise-1024x683.jpg" height='200' width='220' onclick="openModal();currentSlide(2)" class="hover-shadow">
+				</div>
+				<div class="column">
+				  <img src="Images\greektort.jpg" height='200' width='220' onclick="openModal();currentSlide(3)" class="hover-shadow">
+				</div>
+				<div class="column">
+				  <img src="Images\Sulcata_Tortoise_(5)_(8679964197).jpg" height='200' width='220' onclick="openModal();currentSlide(4)" class="hover-shadow">
+				</div>
+			  </div>
+			  <p style="text-align: center; font-size: 30px;">Here are the best Tortoises to keep as pets!</p>
+			  
+			  <!-- The Modal/Lightbox -->
+			  <div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+			  
+				  <div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="Images\russian-tortoise-small.jpg" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="Images\redfooted_tortoise-1024x683.jpg" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="Images\greektort.jpg" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="Images\Sulcata_Tortoise_(5)_(8679964197).jpg" style="width:100%">
+				  </div>
+			  
+				  <!-- Next/previous controls -->
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			  
+				  <!-- Caption text -->
+				  <div class="caption-container">
+					<p id="caption"></p>
+				  </div>
+			  
+				  <!-- Thumbnail image controls -->
+				  <div class="column">
+					<img class="demo" src="Images\russian-tortoise-small.jpg" height='200' width='200' onclick="currentSlide(1)" alt="Russian Tortoise">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="Images\redfooted_tortoise-1024x683.jpg" height='200' width='200' onclick="currentSlide(2)" alt="Redfoot Tortoise">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="Images\greektort.jpg" height='200' width='200' onclick="currentSlide(3)" alt="Greek Tortoise">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="Images\Sulcata_Tortoise_(5)_(8679964197).jpg" height='200' width='200' onclick="currentSlide(4)" alt="Sulcata Tortoise">
+				  </div>
+				</div>
+			  </div>
 		</div>
 	</section>
 	<!--end breeds-->
+
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+	  
+		  <div class="mySlides">
+			<div class="numbertext">1 / 4</div>
+			<img src="Images/russian-tortoise-small.jpg" style="width:100%">
+		  </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">2 / 4</div>
+			<img src="Images\redfooted_tortoise-1024x683.jpg" style="width:100%">
+		  </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">3 / 4</div>
+			<img src="Images\greektort.jpg" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides">
+			<div class="numbertext">4 / 4</div>
+			<img src="Images\Sulcata_Tortoise_(5)_(8679964197).jpg" style="width:100%">
+		  </div>
+		  
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  
+		  <div class="caption-container">
+			<p id="caption">testing</p>
+		  </div>
+	  
+	  
+		  <div class="column">
+			<img class="demo cursor" src="Images/russian-tortoise-small.jpg" style="width:100%" onclick="currentSlide(1)" alt="Russian Tortoise">
+		  </div>
+		  <div class="column">
+			<img class="demo cursor" src="Images\redfooted_tortoise-1024x683.jpg" style="width:100%" onclick="currentSlide(2)" alt="Redfoot Tortoise">
+		  </div>
+		  <div class="column">
+			<img class="demo cursor" src="Images\greektort.jpg" style="width:100%" onclick="currentSlide(3)" alt="Greek Tortoise">
+		  </div>
+		  <div class="column">
+			<img class="demo cursor" src="Images\Sulcata_Tortoise_(5)_(8679964197).jpg" style="width:100%" onclick="currentSlide(4)" alt="Sulcata Tortoise">
+		  </div>
+		</div>
+	  </div>
+	  
 	
 	<!--Contact-->
 	<section id="contact">
@@ -205,6 +323,7 @@
 								<input type='button' value='Submit'><br>
 								<label class='terms'>Terms and Conditions</label>
 							</div>
+							
 						</form>
 					</div>
 				</div>
@@ -215,6 +334,7 @@
 	
 	<!--footer-->
 	<div id="footer">
+		
 		www.Thetortoisehub.com &nbsp; &nbsp; &copy; 2022
 	</div>
 	<!--end footer-->
